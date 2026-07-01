@@ -5,3 +5,154 @@ body {
   padding: 20px;
   background-color: #f9f9f9;
 }
+
+/* Universal Selector: Remove default margin and padding from all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body: Set font style, background color and text color */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header: Style the navigation bar */
+header {
+    background-color: #172554;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Navigation Links: Style all links inside nav */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+/* Hover: Change link color when mouse moves over it */
+nav a:hover {
+    color: yellow;
+}
+
+/* Hero Section: Style the main welcome section */
+.hero {
+    background-color: #2563eb;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+/* Hero Heading: Set heading size and bottom spacing */
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+/* Hero Paragraph: Set paragraph size and bottom spacing */
+.hero p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+/* Button: Style the Join Our Club button */
+button {
+    background-color: #facc15;
+    color: black;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Button Hover: Change button background on mouse hover */
+button:hover {
+    background-color: orange;
+}
+
+/* About Section: Center text and add spacing */
+.about {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Section Headings: Style About, Activities and Contact headings */
+.about h2,
+.activities h2,
+.contact h2 {
+    margin-bottom: 20px;
+    color: #172554;
+}
+
+/* Activities Section: Center activities and add spacing */
+.activities {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Club Container: Arrange all activity cards in a row */
+.club-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+/* Club Cards: Style individual activity cards */
+.club-card {
+    background-color: white;
+    padding: 30px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Card Heading: Change activity heading color and spacing */
+.club-card h3 {
+    color: #2563eb;
+    margin-bottom: 15px;
+}
+
+/* Contact Section: Set background, center text and add spacing */
+.contact {
+    background-color: #e5e7eb;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Footer: Style the bottom section of the website */
+footer {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Media Query: Apply responsive styles on screens smaller than 600px */
+@media (max-width: 600px) {
+
+    /* Header: Display logo and navigation vertically */
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Club Container: Display cards vertically on mobile */
+    .club-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Navigation Links: Reduce spacing between links */
+    nav a {
+        margin: 5px;
+    }
+}
