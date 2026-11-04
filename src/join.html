@@ -1,12 +1,69 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Page Title - University Clubs Portal</title>
-  <link rel="stylesheet" href="../styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join a Club - University Clubs Portal</title>
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
-  <h1>Page Title (Placeholder)</h1>
+
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <h2>University Clubs</h2>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="clubs.html">Clubs</a></li>
+                <li><a href="join.html">Join Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Join Club Section -->
+    <section class="join-section">
+        <div class="join-container">
+
+            <h1>Join Our University Club</h1>
+            <p>Become a member and explore your interests with us!</p>
+
+            <!-- Join Form -->
+            <form class="join-form">
+
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your full name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+
+                <label for="student-id">Student ID</label>
+                <input type="text" id="student-id" placeholder="Enter your student ID" required>
+
+                <label for="club">Select Your Club</label>
+                <select id="club" required>
+                    <option value="">Choose a Club</option>
+                    <option value="sports">Sports Club</option>
+                    <option value="science">Science Club</option>
+                    <option value="literature">Literature Club</option>
+                    <option value="music">Music Club</option>
+                    <option value="photography">Photography Club</option>
+                </select>
+
+                <label for="message">Why do you want to join?</label>
+                <textarea id="message" rows="4" placeholder="Write your reason..."></textarea>
+
+                <!-- Join Button -->
+                <button type="submit">Join Now</button>
+
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2026 University Clubs Portal. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>

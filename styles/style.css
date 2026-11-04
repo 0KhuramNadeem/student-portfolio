@@ -5,3 +5,145 @@ body {
   padding: 20px;
   background-color: #f9f9f9;
 }
+
+
+/* join Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #172554;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    color: #38bdf8;
+}
+
+/* Join Section Styling */
+.join-section {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* Join Form Container */
+.join-container {
+    background-color: white;
+    width: 100%;
+    max-width: 550px;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.join-container h1 {
+    text-align: center;
+    color: #172554;
+    margin-bottom: 12px;
+}
+
+.join-container p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+/* Join Form Styling */
+.join-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.join-form label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.join-form input,
+.join-form select,
+.join-form textarea {
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    width: 100%;
+}
+
+/* Input Focus Effect */
+.join-form input:focus,
+.join-form select:focus,
+.join-form textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+/* Join Button Styling */
+.join-form button {
+    background-color: #2563eb;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.join-form button:hover {
+    background-color: #172554;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar ul {
+        gap: 15px;
+    }
+
+    .join-container {
+        padding: 25px 20px;
+    }
+}
