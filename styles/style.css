@@ -5,3 +5,113 @@ body {
   padding: 20px;
   background-color: #f9f9f9;
 }
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f7f6;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header & Navigation Styles */
+header {
+  background-color: #1e3a8a; /* Deep University Blue */
+  color: #ffffff;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #e2e8f0;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  padding-bottom: 4px;
+}
+
+nav a:hover {
+  color: #38bdf8;
+  border-bottom: 2px solid #38bdf8;
+}
+
+/* Main Content Area */
+main {
+  flex: 1;
+  max-width: 1000px;
+  width: 90%;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.welcome-section {
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border-left: 5px solid #1e3a8a;
+}
+
+.welcome-section h2 {
+  color: #1e3a8a;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+.welcome-section p {
+  color: #4b5563;
+  font-size: 1.1rem;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #0f172a;
+  color: #94a3b8;
+  text-align: center;
+  padding: 1.2rem;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  nav ul {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .welcome-section {
+    padding: 1.5rem;
+  }
+}
