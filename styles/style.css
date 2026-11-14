@@ -6,10 +6,12 @@ body {
   background-color: #f9f9f9;
 }
 
+/* <<<<<<< release/v1.0 */
+/* ======= */
 
 /* Universal Selector: Remove default margin and padding from all elements */
 
- feature/join-page
+/*  feature/join-page */
 
 
 /* join Styling */
@@ -293,6 +295,7 @@ footer {
 
  feature/home-page
 
+/* >>>>>>> develop */
 /* ===== University Clubs Portal - Shared Stylesheet ===== */
 body {
   font-family: Arial, sans-serif;
@@ -361,6 +364,10 @@ footer {
   
   main {
     padding: 15px;
+/* <<<<<<< release/v1.0 */
+  }
+}
+/* ======= */
 /* Reset & Base Styles */
 * {
   margin: 0;
@@ -472,3 +479,4 @@ footer {
   }
 }
 
+/* >>>>>>> develop */
